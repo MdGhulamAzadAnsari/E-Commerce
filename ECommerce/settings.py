@@ -86,6 +86,8 @@ DATABASES = {
     }
 }
 
+
+# Postgresql Configuration
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
@@ -120,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -141,6 +143,6 @@ STATIC_ROOT = Path.joinpath(BASE_DIR, "staticfiles")
 
 MEDIA_URL = "/images/"
 
-MEDIA_ROOT = Path.joinpath(BASE_DIR, "static/images")
+MEDIA_ROOT = Path.joinpath(BASE_DIR, "static", "images")
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
